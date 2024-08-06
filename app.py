@@ -381,9 +381,7 @@ if __name__ == "__main__":
                     )
 
             with gr.Column():
-                gallery = gr.outputs.Image(
-                    type="pil",
-                ).style(full_width=True, full_height=True)
+                gallery = gr.Image(type="pil")
 
         run_button.click(fn=run_unipose, inputs=[
                         input_image, instance_prompt, keypoint_example, box_threshold, IoU_threshold], outputs=[gallery])
