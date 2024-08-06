@@ -371,7 +371,7 @@ if __name__ == "__main__":
                 input_image = gr.Image(type="pil")
                 instance_prompt = gr.Textbox(label="Instance Prompt")
                 keypoint_example = gr.Textbox(label="Keypoint Example", info="Support predefined keypoints: 1) Articulated Objects: person, face, hand, animal_in_AnimalKindom, animal_in_AP10K, animal_face, fly, locust; 2) Rigid Objects: car, table, chair, bed, sofa, swivelchair; 3) Soft Objects: short_sleeved_shirt, long_sleeved_outwear, short_sleeved_outwear, sling, vest, long_sleeved_dress, long_sleeved_shirt, trousers, sling_dress, vest_dress, skirt, short_sleeved_dress, shorts")
-                run_button = gr.Button(label="Run")
+                run_button = gr.Button("Run")
                 with gr.Accordion("Advanced options", open=False):
                     box_threshold = gr.Slider(
                         label="Box Threshold", minimum=0.0, maximum=1.0, value=0.1, step=0.001
